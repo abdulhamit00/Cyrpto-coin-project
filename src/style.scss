@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+//logo
+
+.logo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-top: 200px;
+  h2 {
+    font-weight: normal;
+  }
+  img {
+    width: 60px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 40px;
+
+  div {
+    position: relative;
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 5px;
+      border: none;
+      &:focus {
+        outline: 1px solid #646cff;
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    margin-top: 5px;
+    color: rgb(210, 43, 43);
+  }
+
+  button {
+    color: white;
+    &:disabled {
+      background: gray;
+    }
+  }
+}
+
+//header
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  .h-logo {
+    display: flex;
+    width: 3rem;
+    align-items: center;
+    gap: 20px;
+    img {
+      width: 3rem;
+    }
+  }
+  .links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .active {
+    text-shadow: 0 0 16px #646cff;
+  }
+}
+
+//button stilleri
+
+.cta {
+  display: flex;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+  margin-top: 28px 0;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #fbc638;
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+.up {
+  color: green !important;
+}
+
+.down {
+  color: red !important;
+}
+
+.cardd {
+  transition: all 0.3s;
+}
+
+.cardd:hover {
+  cursor: pointer;
+  transform: translate(10px, -10px);
+  box-shadow: 0px 0px 10px #646cff;
+}
+
+table tr {
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+}
